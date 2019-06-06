@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Customization
-nav_order: 6
+title: Cast of Characters
+nav_order: 2
 ---
 
-# Customization
+# Individuals you should know..
 {: .no_toc }
 
 ## Table of contents
@@ -15,13 +15,20 @@ nav_order: 6
 
 ---
 
-## Color schemes
+## Spanish Royal Authority
 {: .d-inline-block }
 
-New
-{: .label .label-green }
+Important
+{: .label .label-purple }
 
-Just the Docs supports two color schemes: light (default), and dark.
+**Ferdinand II of Aragon** | **Charles V, Holy Roman Emperor** | **Philip II of Spain**
+              ------------ | -------------                    | ---
+20 Jan 1479 - 23 Jan 1516  | 28 June 1519 - 27 August 1556    | 16 Jan 1556 - 13 Sept 1598
+
+
+
+[Read more about ] <b/r>
+[Read more about Charles V, Holy Roman Emperor here](https://en.wikipedia.org/wiki/Charles_V,_Holy_Roman_Emperor)
 
 To enable a color scheme, set the `color_scheme` parameter in your site's `_config.yml` file:
 
@@ -49,25 +56,41 @@ addEvent(toggleDarkMode, 'click', function(){
 })
 </script>
 
-## Specific visual customization
+## Church Authority
+Equally as important
+{: .label .label-purple }
 
-To customize your site’s aesthetic, open `_sass/custom/custom.scss` in your editor to see if there is a variable that you can override. Most styles like fonts, colors, spacing, etc. are derived from these variables. To override a specific variable, uncomment its line and change its value.
+#### Popes during the late 15th - early 17th century
 
-For example, to change the link color from the purple default to blue, open `_sass/custom/custom.css` and find the `$link-color` variable on line `50`. Uncomment it, and change its value to our `$blue-000` variable, or another shade of your choosing.
+**Alexander VI** | **Pius III** | **Julius II** | **Leo X**
+    ------------ | ------------- |-------------| ---
+11 Aug 1492 - 18 Aug 1503  | 22 Sept 1503 - 18 Oct 1503 | 16 Jan 1556 - 13 Sept 1598 | 9 Mar 1513 - 1 Dec 1521
+    ------------ | ------------- |-------------| ---
+Issued papal bull _Inter caetera_ | Pope for 26 days | Commissioned re-construction of St. Peter's Basilica | Excommunicted Martin Luther
 
-#### Example
-{: .no_toc }
+**Adrian VI** | **Clement VIII** | **Paul III** | **Julius III**
+    ----------| ------------- |-------------| ---
+9 Jan 1522 - 14 Sept 1523  | 26 Nov 1523 - 25 Sept 1534 | 13 Oct 1534 - 10 Nov 1549 | 7 Feb 1550 - 29 Mar 1555
+    ------------ | ------------- |-------------| ---
+Only Dutch Pope | Blocked divorce of Henry VIII from Catherine of Aragon.| Opened Council of Trent in 1545 | [Innocenzo Scandal](https://en.wikipedia.org/wiki/Innocenzo_Ciocchi_Del_Monte)
+
+**Marcellus II** | **Paul IV** | **Pius IV** | **St Pius IV**
+    ----------| ------------- |-------------| ---
+9 Apr 1555 - 1 May 1555  | 23 May 1555 - 18 Aug 1559 | 26 Dec 1559 - 9 Dec 1565 | 7 Jan 1566 - 1 May 1572
+    ------------ | ------------- |-------------| ---
+Pope for 22 Days| Ordered Michael Angelo to repaint nude bodies in _Last Judgment_ | Tridentine Creed (Profession of Faith) | Excommunicated Elizabeth I
+
+#### Protector of the Indians
+
+Protector of Indians _Protectoría de los Indios_ was an administrative office of the Spanish colonies, that was responsible for ensuring the well being of the native populations in the Americas, including defending them in a court of law and reporting back to the King of Spain. The title was introduced under the reign of King Charles V. The notable Dominican friar, and later Bishop of Chiapas,Bartolomé de las Casas, was the first to hold the title. Juan del Valle held this tile when appointed by Pope Paul III in 1547.
+
+## Influential Thinkers
+
 
 ```scss
-// ...
-//
-// $body-text-color: $grey-dk-100;
-// $body-heading-color: $grey-dk-300;
-$link-color: $blue-000;
-//
-// ...
+Aristotle
+Thomas Aquinas
 ```
 
-_Note:_ Editing the variables directly in `_sass/support/variables.scss` is not recommended and can cause other dependencies to fail.
 
 ---

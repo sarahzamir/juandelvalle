@@ -1,12 +1,17 @@
 ---
 layout: default
-title: UI Components
+title: Mapping with Mapbox
 nav_order: 3
 has_children: true
-permalink: /docs/ui-components
+permalink: /docs/mapping
 ---
 
-# UI Components
+# **Maps of Popayán**
 
-To make it as easy as possible to write documentation in plain Markdown, most UI components are styled using default Markdown elements with few additional CSS classes needed.
+Below are maps of Popayán in the _Nuevo Reino de Granada_
 {: .fs-6 .fw-300 }
+
+MAP | Second Header | Third Header
+------------ | ------------- | ---
+Content cell 1 | Content cell 2 | Content cell 3
+Content cell 4 | Content cell 5 | Content cell 6

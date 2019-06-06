@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Juan Del Valle: First Bishop of Popayán"
+title: "Juan del Valle: First Bishop of Popayán"
 description: A Static History of Colonial Spain's Nuevo Reino de Granada
 baseurl: "/juandelvalle/" # the subpath of your site, e.g. /blog
 url: "https://juandelvalle.github.io" # the base hostname & protocol for your site, e.g. http://example.com
@@ -26,8 +26,10 @@ search_enabled: true
 
 # Aux links for the upper right navigation
 aux_links:
-  "Just the Docs on GitHub":
-    - "//github.com/juandelvalle/just-the-docs"
+  "Read about Popayán here":
+    - "https://en.wikipedia.org/wiki/Popay%C3%A1n"
+  "Read about Sarah here":
+    - "https://www.lais.ucsb.edu/people/sarah-mckenzie-zamir"
 
 # Color scheme currently only supports "dark" or nil (default)
 color_scheme: "dark"
