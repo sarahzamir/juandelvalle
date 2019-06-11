@@ -2,6 +2,7 @@
 layout: default
 title: Reading List
 nav_order: 2
+background: '/Users/sarahzamir/websites/juandelvalle/assets/images/Optimized Alhambra.jpg'
 ---
 
 # **Bishops, _encomenderos_, restitution, justice, and legal conscience in Popayán**.
@@ -35,7 +36,6 @@ Below is a list of sources I have spent my Spring 2019 quarter reading to inform
 1. Friede, Juan. _Don Juan del Valle, primer obispo de Popayán_. Segovia: Instituto Diego de Colmenares, **1952**.
 2. Friede, Juan. _Vida y luchas de don Juan del Valle, primer obispo de Popayán y protector de indios; estudio documental basado en investagaciones realizadas en los archivos de Colombia, España y el Vaticano_. Popayán, Colombia: Editorial Universidad, 1961.
 3. Hanke, Lewis. _The Spanish Struggle for Justice in the Conquest of America_. Boston and Toronto: Little, Brown and Company, 1949.
-4.
 
 ## Secondary legal texts
 
@@ -54,3 +54,4 @@ Below is a list of sources I have spent my Spring 2019 quarter reading to inform
 1. Herrera-Ángel, Marta. _Popayán: la unidad de lo diverso: territorio, población, y poblamiento en la provincia de Popayán, siglo XVIII_ Bogotá D.C.: Universidad de Los Andes, Facultad de Ciencias-Sociales-CESO, Departmento de Historia
 2. Marzahl, Peter. _Town in the Empire: government, politics, and society in seventeenth century Popayán._ Austin, TX: University of Texas Press, 1978.
 ga_tracking: UA-5555555-55
+3. Bryant, Sherman K. _Rivers of Gold, Lives of Bondage: Governing through Slavery in Colonial Quito_. Chapel Hill, NC; University of North Carolina Press, 2014. 240 P.

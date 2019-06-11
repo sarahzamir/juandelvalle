@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Navigation Structure
+title: Overview of the Encomienda System
 nav_order: 5
 ---
 
@@ -15,216 +15,37 @@ nav_order: 5
 
 ---
 
-## Main navigation
+## What is the _encomienda_?
 
-The main navigation for your Just the Docs site is on the left side of the page at large screens and on the top (behind a tap) on small screens. The main navigation can be structured to accommodate a multi-level menu system (pages with children and grandchildren).
+In the early 16th century, the Spanish crown set up the encomienda system in the Americas to divide up the American Indian labor force in order to aid the development of their mining economy. Under this system a Spanish conquistador, or another prominent male Spaniard (known as an _encomendero_), was granted the labor of a certain number of the Indigenous populations living in the area. The _encomendero_ provided oversight and security over Indigenous peoples whom were considered under their protection from warring tribes, and teachings in the Catholic faith. The native laborer paid tributes to the _encomendero_ in the form of gold or other metals, or agricultural products.
 
-By default, all pages will appear as top level pages in the main nav unless a parent page is defined (see [Pages with Children](#pages-with-children)).
+The system was designed to include the Crown's newly conquered dominions, as vassals of the King. However, the lack of royal authority on the ground combined with geographic distance from mainland Spain saw the system quickly devolve into a lawless arrangement. Many indigenous peoples were treated poorly and often forced into hard labor.
+
+The crown attempted to fix the system by passing various laws throughout the century, but strong objections from various groups of town _cabildos_ ended up with _encomenderos_ refusal to comply with these new measures. Eventually, the _encomienda_ system was replaced by the _repartimiento_ system, but it was not abolished until the late 18th century.
 
 ---
 
-## Ordering pages
+For clarity, please remember this site's focus is the `sixteenth century`
 
-To specify a page order, use the `nav_order` parameter in your pages' YAML front matter.
-
-#### Example
+#### Important years to note for the _encomienda_ system
 {: .no_toc }
 
 ```yaml
 ---
-layout: default
-title: Customization
-nav_order: 4
+  1503: The first encomiendas are granted to Spanish conquistadors in the Americas.
+  1512-13: Spain passes the Laws of Burgos in an attempt to end the abuses of the system.
+  1542: Spain passes the New Laws of the Indies, another failed attempt to end the abuse of Indigenous peoples under the encomienda system
 ---
 ```
-
----
-
-## Excluding pages
-
-For specific pages that you do not wish to include in the main navigation, e.g. a 404 page or a landing page, use the `nav_exclude: true` parameter in the YAML front matter for that page.
-
-#### Example
+#### Important Figures Associated with the _encomienda_ system
 {: .no_toc }
 
 ```yaml
 ---
-layout: default
-title: 404
-nav_exclude: true
+  1. Nicolas de Ovando: Spanish soldier who governed Hispaniola until 1509 when Ferdinand II demanded his return for cruelty against the Tainos. Replaced by Diego Columbus, son of Christopher.
+  2. Bartolomé de las Casas: A native of Seville, Spain. At the age of 8 he witnessed Tainos paraded through Seville in a show of exoticism regarding the 'Treasures' of the New World.He would later become an encomendero, and then later Bishop of Chiapas who advocated for the humanity and rights of Indigenous populations.
+  ```
 ---
-```
+<img src="/juandelvalle/assets/images/EncomiendaReality.png" style="display:block;margin-left:auto;margin-right:auto;height:500px">
 
----
-
-## Pages with children
-
-Sometimes you will want to create a page with many children (a section). First, it is recommended that you keep pages that are related in a directory together... For example, in these docs, we keep all of the written documentation in the `./docs` directory and each of the sections in subdirectories like `./docs/ui-components` and `./docs/utilities`. This gives us an organization like:
-
-```
-+-- ..
-|-- (Jekyll files)
-|
-|-- docs
-|   |-- ui-components
-|   |   |-- ui-components.md  (parent page)
-|   |   |-- buttons.md
-|   |   |-- code.md
-|   |   |-- labels.md
-|   |   |-- tables.md
-|   |   +-- typography.md
-|   |
-|   |-- utilities
-|   |   |-- utilities.md      (parent page)
-|   |   |-- color.md
-|   |   |-- layout.md
-|   |   |-- responsive-modifiers.md
-|   |   +-- typography.md
-|   |
-|   |-- (other md files, pages with no children)
-|   +-- ..
-|
-|-- (Jekyll files)
-+-- ..
-```
-
-On the parent pages, add 2 YAML front matter parameters:
--  `has_children: true` (tells us that this is a parent page)
--  `permalink:` set this to the site directory that contains the child pages
-
-#### Example
-{: .no_toc }
-
-```yaml
----
-layout: default
-title: UI Components
-nav_order: 2
-has_children: true
-permalink: /docs/ui-components
----
-```
-
-Here we're setting up the UI Components landing page that is available at `/docs/ui-components`, which has children and is ordered second in the main nav.
-
-### Child pages
-{: .text-gamma }
-
-On child pages, simply set the `parent:` YAML front matter to whatever the parent's page title is and set a nav order (this number is now scoped within the section).
-
-#### Example
-{: .no_toc }
-
-```yaml
----
-layout: default
-title: Buttons
-parent: UI Components
-nav_order: 2
----
-```
-
-The Buttons page appears as a child of UI Components and appears second in the UI Components section.
-
-### Auto-generating Table of Contents
-
-By default, all pages with children will automatically append a Table of Contents which lists the child pages after the parent page's content. To disable this auto Table of Contents, set `has_toc: false` in the parent page's YAML front matter.
-
-#### Example
-{: .no_toc }
-
-```yaml
----
-layout: default
-title: UI Components
-nav_order: 2
-has_children: true
-has_toc: false
-permalink: /docs/ui-components
----
-```
-
-### Children with children
-{: .text-gamma }
-
-Child pages can also have children (grandchildren). This is achieved by using a similar pattern on the child and grandchild pages.
-
-1. Add the `has_children` attribute to the child
-1. Add the `parent` and `grand_parent` attribute to the grandchild
-
-#### Example
-{: .no_toc }
-
-```yaml
----
-layout: default
-title: Buttons
-parent: UI Components
-nav_order: 2
-has_children: true
----
-```
-
-```yaml
----
-layout: default
-title: Buttons Child Page
-parent: Buttons
-grand_parent: UI Components
-nav_order: 1
----
-```
-
-This would create the following navigation structure:
-
-```
-+-- ..
-|
-|-- UI Components
-|   |-- ..
-|   |
-|   |-- Buttons
-|   |   |-- Button Child Page
-|   |
-|   |-- ..
-|
-+-- ..
-```
-
----
-
-## Auxiliary Navigation
-
-To add a auxiliary navigation item to your site (in the upper right on all pages), add it to the `aux_nav` [configuration option]({{ site.baseurl }}{% link docs/configuration.md %}#aux-nav) in your site's `_config.yml` file.
-
-#### Example
-{: .no_toc }
-
-```yaml
-# Aux links for the upper right navigation
-aux_links:
-  "Just the Docs on GitHub":
-    - "//github.com/pmarsceill/just-the-docs"
-```
-
----
-
-## In-page navigation with Table of Contents
-
-To generate a Table of Contents on your docs pages, you can use the `{:toc}` method from Kramdown, immediately after an `<ol>` in Markdown. This will automatically generate an ordered list of anchor links to various sections of the page based on headings and heading levels. There may be occasions where you're using a heading and you don't want it to show up in the TOC, so to skip a particular heading use the `{: .no_toc }` CSS class.
-
-#### Example
-{: .no_toc }
-
-```markdown
-# Navigation Structure
-{: .no_toc }
-
-## Table of contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-```
-
-This example skips the page name heading (`#`) from the TOC, as well as the heading for the Table of Contents itself (`##`) because it is redundant, followed by the table of contents itself.
+1. Encomienda Plan v. Reality, 2018, digital, www.Epicworldhistory.blogspot.com.

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Search
+title: Popayán's Administrative and Economic Organization
 nav_order: 7
 ---
 
@@ -21,9 +21,11 @@ Just the Docs uses [lunr.js](http://lunrjs.com) to add a client-side search inte
 - Page content
 - Page URL
 
-## Set up search
+## Encomienda System
 
-### Generate search index
+_See 'Overview of the Encomienda System'_
+
+### Mining Industry
 
 Before you can use search, you must initialize the feature by running this `rake` command that comes with `just-the-docs`:
 
@@ -50,7 +52,7 @@ This command creates the `search-data.json` file that Jekyll uses to create your
 
 _Note: If you don't run this rake command or create this file manually, search will not work (or it will use the search index data from this docs site, not your site's content)._
 
-### Enable search in configuration
+### Plantations
 
 In your site's `_config.yml`, enable search:
 
@@ -59,7 +61,7 @@ In your site's `_config.yml`, enable search:
 search_enabled: true
 ```
 
-## Hiding pages from search
+## Spanish Administrative Organization
 
 Sometimes you might have a page that you don't want to be indexed for the search nor to show up in search results, e.g, a 404 page. To exclude a page from search, add the `search_exclude: true` parameter to the page's YAML front matter:
 
