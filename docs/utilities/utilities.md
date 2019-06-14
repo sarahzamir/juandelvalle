@@ -19,8 +19,4 @@ In this website, readers can expect to find a roadmap for my prospectus for my m
 
 1. Where is Popayán on a map?
 2. What is the history of the region?
-3. What made this area unique?
-4. Who was Juan del Valle? What did he want? What did he do?
-5. How did evangelization work during the sixteenth century?
-6. What is the relationship between moral theology and political power?
-7. Finally, why is restitution important?
+3. Who was Juan del Valle?

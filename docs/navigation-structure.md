@@ -4,7 +4,7 @@ title: Overview of the Encomienda System
 nav_order: 5
 ---
 
-# Navigation Structure
+# Labor Systems
 {: .no_toc }
 
 ## Table of contents
@@ -48,4 +48,8 @@ For clarity, please remember this site's focus is the `sixteenth century`
 ---
 <img src="/juandelvalle/assets/images/EncomiendaReality.png" style="display:block;margin-left:auto;margin-right:auto;height:500px">
 
-1. Encomienda Plan v. Reality, 2018, digital, www.Epicworldhistory.blogspot.com.
+Encomienda Plan v. Reality, 2018, digital, www.Epicworldhistory.blogspot.com.
+
+## What is the _repartimiento_ system?
+
+With the New Laws of 1542, the _repartimiento_ was introduced as a substitute for the _encomienda_ system that had widely come to be seen as abusive and promoting unethical behavior. The _repartimiento_ was not considered slavery because the worker still had considerable freedoms. However, in some areas of the Spanish empire it created conditions which could be argued as comparable to slavery.
